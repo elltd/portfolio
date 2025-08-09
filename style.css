@@ -68,7 +68,7 @@ body{
     z-index:100;
     white-space:nowrap;
     line-height: 20px;
-    max-width:min-content;
+    max-width:fit-content;
     margin-top: 0px;
     margin-bottom: 0px;
     
@@ -215,7 +215,40 @@ p{
     margin: 0%;
     }
 
+   /* .full-page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-y: visible;
+    
+    }
 
+    .left-side {
+    flex: 0 0 auto;
+    display: flex;
+    padding-bottom: 0.75em;
+    padding-right: 1.25em;
+    overflow-y: visible;
+    max-width: 480px;
+     flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .right-side {
+        flex: 0 0 auto;
+        display: block;
+        padding-left: 1.25em;
+        overflow-y: visible;
+         flex-direction: column;
+          flex-wrap: wrap;
+    }
+
+    .project-asset {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+}*/
 }
 
 /*project pages*/
