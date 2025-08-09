@@ -300,9 +300,9 @@ p{
 
 }
 
-.brief {
-    line-height: 0.5em;
-}
+/*.brief {
+    
+}*/
 
 hr {
   border: none;
@@ -317,11 +317,20 @@ hr {
     color: var(--accent-color);
     margin-top: 2em;
     margin-bottom: 0%;
+    line-height: 0.5em;
 }
 #data {
     font-size: 11px;
     display: flex;
     justify-content: space-between;
+    line-height: 0%;
+    margin-top: 1em;
+    margin-bottom: 0em;
+}
+#purpose {
+    font-size: 11px;
+    line-height: 0px;
+    margin-bottom: 0em;
 }
 
 #project-desc {
@@ -333,4 +342,5 @@ hr {
     height: auto;
     object-fit: contain;
     object-position: center top;
+    margin-bottom: 1.5em;
 }
