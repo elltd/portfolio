@@ -317,7 +317,7 @@ hr {
 
 }
 */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 43em /* 688px */) {
   body {
     font-size: 15px;
     max-width:600px;}
@@ -389,7 +389,13 @@ hr {
     flex: 0 0 auto;
 }
 
-
+.project-asset {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+    margin-bottom: 1.5em;
+}
 
   
 }
