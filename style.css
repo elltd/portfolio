@@ -77,7 +77,7 @@ body{
 }
 
 #header-container a{
-    text-decoration: underline;
+
     background-color:var(--foreground-color);
     color: var(--background-color);
 
@@ -352,7 +352,7 @@ footer a:hover {
 */
 @media only screen and (max-width: 43em /* 688px */) {
   body {
-    font-size: 16px;
+    font-size: 15px;
     max-width:688px;
     margin:0%;
     }
@@ -428,7 +428,7 @@ footer a:hover {
     }
 
     #data {
-        font-size: 14px;
+        font-size: 13px;
         display: flex;
         justify-content: space-between;
         line-height: 0%;
@@ -436,7 +436,7 @@ footer a:hover {
         margin-bottom: 0em;
         }
     #purpose {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 0px;
         margin-bottom: 0em;
         }
