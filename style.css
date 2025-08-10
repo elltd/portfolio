@@ -317,17 +317,18 @@ hr {
 
 }
 */
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 43em /* 688px */) {
   body {
     font-size: 15px;
-    max-width:600px;}
+    max-width:688px;
+    margin:0%;
+}
 
     .project-grid {
         columns:1;
         gap:5px;
         break-inside:avoid;
     }
-    
 
     .project{
         margin-bottom: 5px;
@@ -335,7 +336,7 @@ hr {
     }
 
     .split{
-        flex-direction:column;
+        flex-direction: column;
         display: flex;
         width: 100%;
     }
@@ -346,7 +347,7 @@ hr {
 
     .full-page{
 
-        width: 100%;
+    width: 100%;
 
     display: flex;
     flex-wrap:nowrap;
