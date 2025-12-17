@@ -9,6 +9,7 @@
 :root {
     --accent-color: #1b629f;
     --accent-color-2: #a1c4e2;
+    --accent-color-3: #bd1c52;
     --background-color: white;
     --foreground-color: black;
 }
@@ -48,7 +49,7 @@ body {
 
     font-family: "Inter", sans-serif; 
     font-weight: 400;
-    font-size:12px;
+    font-size:13px;
     letter-spacing: 0.25px;
     font-style: normal;
 
@@ -58,6 +59,11 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 2em;
+
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.25px;
+    font-style: normal;
 }
 
 .split {
@@ -144,17 +150,13 @@ body {
 
 .intro {
     margin-top: 3px;
-    width: 350px;
+    width: 375px;
     text-align: right;
 }
 
 .intro p {
     line-height: 15px;
     margin-top: 0px;
-    font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.25px;
-  font-style: normal;
 }
 
 .main a {
@@ -242,9 +244,7 @@ a {
     padding-top: 1.5em;
 }
 
-.gurt p{
-    color: #224d8a;
-}
+
 
 .byebye {
     margin-top: 1em;
@@ -446,6 +446,19 @@ footer {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-shrink: 0;
+
+    background-color: var(--accent-color);
+    color: var(--background-color);
+
+    text-align: left;
+    z-index: 100;
+    white-space: nowrap;
+    max-width: fit-content;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1px;
 }
 
 .codemsg {
@@ -482,7 +495,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: var(--foreground-color);
+    color: var(--background-color);
     -webkit-transition: all .5s;
     transition: all .3s;
 }
