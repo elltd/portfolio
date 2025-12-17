@@ -54,8 +54,14 @@ body {
 
 }
 
-.split {
+.main {
     display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.split {
+    display:block;
     flex-direction: row;
 
     width: 100%;
@@ -130,18 +136,28 @@ body {
     text-decoration: none;
 }
 
+.links {
+    margin-top: 3px;
+    width: 400px;
+}
+
+
 .intro {
     margin-top: 3px;
-    margin-left: 2.25em;
-    width: 500px;
+    width: 350px;
+    text-align: right;
 }
 
 .intro p {
     line-height: 15px;
     margin-top: 0px;
+    font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  font-style: normal;
 }
 
-.intro a {
+.main a {
     color: var(--accent-color);
 
     -webkit-transition: all .5s;
@@ -149,13 +165,13 @@ body {
     text-decoration: underline var(--accent-color-2);
 }
 
-.intro a:hover {
+.main a:hover {
     color: transparent;
     text-shadow: 0 0 2px rgba(116, 170, 185, 0.7);
     text-decoration: underline rgba(135, 166, 175, 0.375);
 }
 
-.intro a:visited {
+.main a:visited {
     text-decoration: none;
     color: var(--accent-color);
     text-decoration: underline var(--accent-color-2);
@@ -237,7 +253,7 @@ a {
 .project-grid {
     z-index: 1;
     columns: 3 200px;
-    gap: 15px;
+    gap: 25px;
     break-inside: avoid;
     margin-top: 1.5em;
     position: relative;
@@ -250,7 +266,7 @@ a {
 }
 
 .project {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     position: relative;
 }
 
@@ -549,7 +565,7 @@ footer a:hover {
 }
 
     .project {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         position: relative;
         
     }
@@ -560,9 +576,15 @@ footer a:hover {
         width: 100%;
     }
 
+    .main {
+        display: block;
+        margin-top: 1em;
+    }
+
     .intro {
-        margin: 0%;
+        margin-top: 1em;
         width:fit-content;
+        text-align: left;
     }
 
     .fix{
@@ -603,7 +625,6 @@ footer a:hover {
         width: 100%;
         height: fit-content;
 
-        padding-top: 1.5em;
         border-bottom: 1px solid var(--foreground-color);
         border-right: 0px solid var(--foreground-color);
         overflow-y: auto;
@@ -612,8 +633,10 @@ footer a:hover {
         flex: 0 0 auto;
         position: sticky;
 
+        padding-top: 2em;
         padding-left: 2em;
         padding-right: 2em;
+        padding-bottom:1em;
 
         /* from https://stackoverflow.com/a/12034794 */
         box-sizing: border-box;
