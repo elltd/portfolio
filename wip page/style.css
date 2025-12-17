@@ -1,0 +1,15 @@
+#wip-blurb {
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    color: var(--foreground-color);
+    background-color:var(--background-color);
+
+    font-family: "univers-next-pro", sans-serif;
+    font-size:14px;
+    letter-spacing: 0.25px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

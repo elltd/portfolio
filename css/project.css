@@ -1,0 +1,11 @@
+.two-grid {
+    display: inline-block;
+
+}
+
+.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
