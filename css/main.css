@@ -27,11 +27,6 @@ html {
 }
 
 body {
-    /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
-    overscroll-behavior-y: none;
-    */
-
     width: 100%;
     height: 100%;
     min-height: 100%;
@@ -103,11 +98,11 @@ body {
 }
 
 #info-archive p:hover {
-    color: white;
+    color: var(--accent-color-2);
     text-shadow: 0 0 2px rgba(20, 83, 192, 0.7);
 
     border: 1px solid var(--foreground-color);
-    background-color:var(--accent-color);
+    background-color:var(--foreground-color);
     -webkit-transition: all .5s;
     transition: all .3s;
 }
@@ -247,7 +242,7 @@ a {
 
 .gurt {
     text-align: center;
-    font-size: 11px;
+    font-size: 11.5px;
     line-height: 5%;
     padding-top: 1.5em;
 }
@@ -309,7 +304,7 @@ a {
     margin: 0% auto;
     gap: 2em;
     break-inside: avoid;
-    padding-top: 8em;
+    padding-top: 7em;
 
     box-sizing: border-box;
     align-items:start;
@@ -340,19 +335,18 @@ a {
 
     -webkit-transition: all .5s;
     transition: all .3s;
-    text-decoration: underline var(--accent-color-2);
+    text-decoration: underline var(--foreground-color);
 }
 
 .info-item a:hover {
-    color: transparent;
-    text-shadow: 0 0 2px rgba(116, 170, 185, 0.7);
-    text-decoration: underline rgba(135, 166, 175, 0.375);
+    background-color:var(--foreground-color);
+    color: var(--accent-color-2);
+    -webkit-transition: all .5s;
+    transition: all .3s;
 }
 
 .info-item a:visited {
     text-decoration: none;
-    color: var(--foreground-color);
-    text-decoration: underline var(--accent-color-2);
 }
 
 /*project pages*/
@@ -361,7 +355,7 @@ a {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 100%;
 }
 
@@ -376,7 +370,7 @@ a {
     padding-left: 2em;
     padding-right: 2em;
     border-right: 1px solid var(--foreground-color);
-    overflow-y: hidden;
+    overflow-y: scroll;
     height: 100%;
     flex: 0 0 25em;
     position: sticky;
@@ -388,17 +382,30 @@ a {
     /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
-
 }
+
+.inline-link {
+    color:var(--accent-color);
+}
+
+.inline-link :visited{
+    color:var(--accent-color);
+}
+
+.inline-link:hover{
+    color:var(--accent-color-2);
+    background-color: var(--foreground-color);
+}
+
 
 .right-side {
     background-color: var(--foreground-color);
     color: var(--background-color);
-    padding: 5em 2em 5em 2em;
+    padding: 2em 2em 2em 2em;
     /*height: 100%;*/
     width: 100%;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: visible;
     flex: 1 1 0;
 
     vertical-align: center;
@@ -417,6 +424,20 @@ a {
     /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
+}
+
+.right-side-headertext{
+    color:var(--background-color);
+    margin: 0%;
+    font-size: 13px;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: center;
+}
+mark {
+    background-color: var(--foreground-color); 
+    color: var(--accent-color-2); 
 }
 
 .centered {
@@ -465,27 +486,81 @@ hr {
 
 /*PROJECT PAGE GRID LAYOUTS*/
     .grid-container-1cl-pad {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
     }
 
     .grid-container-2cl {
       display: grid;
       grid-template-columns: 1fr 1fr;
-        padding-left: 3em;
-        padding-right: 3em;
+        padding-left: 2em;
+        padding-right: 2em;
       gap: 15px;
+    }
+
+    .grid-container-3cl {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 2em;
+        padding-right: 2em;
+      gap: 15px;
+    }
+
+    .grid-container-2cl img{
+      width: 100%;
+    }
+
+    .grid-container-2cl-flex {
+      display:flex;
+      padding-left: 2em;
+      padding-right: 2em;
+      gap: 15px;
+      box-sizing: border-box;
+      width:100%;
+    }
+
+    .grid-container-2cl-flex img{
+      width: 100%;
     }
 
     .grid-item {
       padding-bottom: 15px;
     }
 
-.rounded-text {
-    border: 1px solid rgba(0, 0, 0, 0.359);
-    border-radius: 10px;
-    padding: 0.25px 6px 0.5px 6px;
-}
+    .grid-item p{
+      color:rgb(202, 202, 202);
+      margin: 0%;
+      font-size: 12px;
+      padding-top: 0.5em;
+      font-style: italic;
+      text-align: center;
+    }
+    
+    .grid-item a{
+      color:rgb(202, 202, 202);
+      margin: 0%;
+      font-size: 12px;
+      font-style: italic;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .grid-item a:hover{
+      color:var(--accent-color-2);
+      margin: 0%;
+      font-size: 12px;
+      font-style: italic;
+      text-align: center;
+      text-decoration: none;
+          -webkit-transition: all .5s;
+    transition: all .3s;
+    }
+
+    .rounded-text {
+        border: 1px solid rgba(0, 0, 0, 0.359);
+        border-radius: 10px;
+        padding: 0.25px 6px 0.5px 6px;
+    }
 
     .tags {
     margin:0%;
@@ -532,8 +607,10 @@ footer a:visited {
 }
 
 footer a:hover {
-    color: transparent;
-    text-shadow: 0 0 2px rgba(135, 162, 231, 0.448);
+    color: var(--accent-color-2);
+    background-color:var(--foreground-color);
+    -webkit-transition: all .5s;
+    transition: all .3s;
 }
 
 .codemsg {
@@ -741,7 +818,7 @@ footer a:hover {
         padding-bottom: 3em;
 
         align-items: center;
-        /*flex: 0 0 0em;*/
+
         overflow-y: visible;
         /* from https://stackoverflow.com/a/12034794 */
         box-sizing: border-box;
@@ -771,6 +848,14 @@ footer a:hover {
         padding-left: 2em;
         padding-right: 2em;
       gap: 1px;
+    }
+
+    .grid-container-2cl-flex {
+      display: flex;
+      flex-direction: column;
+        padding-left: 3em;
+        padding-right: 3em;
+      gap: 0px;
     }
 
     .grid-item {
