@@ -253,11 +253,16 @@ a {
     padding-top: 1.5em;
 }
 
+.gurt p{
+    text-align: center;
+    font-size: 12px;
+}
+
 .byebye {
     margin-top: 1em;
 }
 
-.project-grid {
+.project-grid-old {
     z-index: 1;
     columns: 3 200px;
     gap: 25px;
@@ -268,13 +273,30 @@ a {
     
 }
 
+.project-grid {
+   /* z-index: 1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: dense;
+    gap: 1em; */
+
+        z-index: 1;
+        columns: 3;
+        height: min-content;
+        gap: 10px;
+        break-inside: avoid;
+        margin-top: 1.5em;
+        position: relative;
+        display: block;
+}
+
 .column {
      flex: 1;
 }
 
 .project {
-    margin-bottom: 25px;
-    position: relative;
+        margin-bottom: 10px;
+        position: relative;
 }
 
 .project p {
@@ -710,15 +732,21 @@ footer a:hover {
 
     .gurt {
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 5%;
     padding-top: 1.5em;
+}
+
+    .gurt p{
+    text-align: center;
+    font-size: 12px;
 }
 
 
     .project-grid {
         z-index: 1;
-        columns: 1;
+        columns: 2;
+        height: min-content;
         gap: 10px;
         break-inside: avoid;
         margin-top: 1.5em;
