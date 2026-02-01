@@ -746,7 +746,7 @@ footer a:hover {
     .project-grid {
         z-index: 1;
         columns: 2;
-        height: min-content;
+        
         gap: 10px;
         break-inside: avoid;
         margin-top: 1.5em;
@@ -763,7 +763,8 @@ footer a:hover {
     .project {
         margin-bottom: 10px;
         position: relative;
-        
+        break-inside: avoid;
+        display: inline-block;
     }
 
     .split {
