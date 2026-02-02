@@ -742,11 +742,24 @@ footer a:hover {
     font-size: 12px;
 }
 
+.tooltiptext {
+    z-index: 999;
+    position: absolute;
+    border: 1px solid var(--background-color);
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+    padding: 3px 4px 3px 4px;
+    text-align: left;
+    visibility: hidden;
+    white-space: nowrap;
+    line-height: 17px;
+    width:max-content;
+    text-wrap: inherit;
+}
 
     .project-grid {
         z-index: 1;
         columns: 2;
-        
         gap: 10px;
         break-inside: avoid;
         margin-top: 1.5em;
@@ -755,10 +768,10 @@ footer a:hover {
     }
 
 
-.column {
-     flex:1;
+    .column {
+        flex:1;
 
-}
+    }
 
     .project {
         margin-bottom: 10px;
