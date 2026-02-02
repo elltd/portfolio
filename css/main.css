@@ -218,7 +218,7 @@ a {
 }
 
 .unavailable.tooltiptext {
-    background-color: #12131d;
+    background-color: #000000;
     color: rgb(175, 175, 175);
     border: 1px solid #6b6b6b;
 }
@@ -265,6 +265,15 @@ a {
 
 .byebye {
     margin-top: 1em;
+    transition: transform .4s ease-in-out;
+}
+
+.byebye img{
+    transition: transform .3s ease-in-out;
+}
+
+.byebye:hover {
+  transform:translateX(-2em);
 }
 
 .project-grid {
@@ -361,6 +370,11 @@ a {
 .info-item-portrait img{
     float: right;
     width:75%;
+    transition: transform .4s ease-in-out;
+}
+
+.info-item-portrait img:hover {
+  transform: rotate(8deg);
 }
 
 .info-item a {
