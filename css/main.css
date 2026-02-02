@@ -26,6 +26,11 @@ html {
     overflow-y: hidden;
 
     /*overscroll-behavior-y: none;*/
+
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 .mainbody {
@@ -262,10 +267,10 @@ a {
     margin-top: 1em;
 }
 
-.project-grid-old {
+.project-grid {
     z-index: 1;
     columns: 3 200px;
-    gap: 25px;
+    gap: 15px;
     break-inside: avoid;
     margin-top: 1.5em;
     position: relative;
@@ -273,12 +278,12 @@ a {
     
 }
 
-.project-grid {
-   /* z-index: 1;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-auto-flow: dense;
-    gap: 1em; */
+  /*.project-grid-old {
+        z-index: 1;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-auto-flow: dense;
+        gap: 1em;
 
         z-index: 1;
         columns: 3;
@@ -288,14 +293,14 @@ a {
         margin-top: 1.5em;
         position: relative;
         display: block;
-}
+}*/
 
 .column {
      flex: 1;
 }
 
 .project {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         position: relative;
 }
 
@@ -755,11 +760,12 @@ footer a:hover {
     line-height: 17px;
     width:max-content;
     text-wrap: inherit;
+    
 }
 
     .project-grid {
         z-index: 1;
-        columns: 2;
+        columns: 1;
         gap: 10px;
         break-inside: avoid;
         margin-top: 1.5em;
@@ -777,7 +783,6 @@ footer a:hover {
         margin-bottom: 10px;
         position: relative;
         break-inside: avoid;
-        display: inline-block;
     }
 
     .split {
