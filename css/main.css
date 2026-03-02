@@ -1,17 +1,24 @@
+@font-face {
+    font-family: 'Ronzino-Regular';
+    src: url('/fonts/Ronzino-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face {
-        font-family: 'Ronzino-Regular';
-        src: url('/fonts/Ronzino-Regular.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
+@font-face {
     font-family: 'Arial Narrow Web';
     src: url('/fonts/arial-narrow.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'NectoMono';
+    src: url('/fonts/NectoMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 :root {
     --accent-color: #1b629f;
@@ -65,7 +72,7 @@ body {
     margin-top: 2em;
 
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 0.25px;
     font-style: normal;
 }
@@ -82,11 +89,13 @@ body {
 
 .nav {
     z-index: 100;
-    display:flex;
+    display: flex;
     white-space: nowrap;
     justify-content: space-between;
 
     border: 1px solid var(--foreground-color);
+
+    
 }
 
 #info-button p, #archive-button p {
@@ -101,15 +110,14 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
 
-
     -webkit-transition: all .5s;
     transition: all .3s;
 }
 
 #info-button p:hover, #archive-button p:hover {
     color: var(--accent-color-2);
-    text-shadow: 0 0 2px rgba(20, 83, 192, 0.7);
     background-color:var(--foreground-color);
+    text-shadow: 0 0 2px rgba(20, 83, 192, 0.7);
     -webkit-transition: all .5s;
     transition: all .3s;
 }
@@ -244,7 +252,7 @@ a {
 }
 
 .yo {
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .gurt {
@@ -771,6 +779,9 @@ footer a:hover {
         margin: 0%;
     }
 
+.yo {
+    margin-top: 1em;
+}
     .gurt {
     text-align: center;
     font-size: 12px;
@@ -1046,7 +1057,7 @@ footer a:hover {
 
 /* bio text change automatic */
 span {
-  color: var(--accent-color);
+  color: var(--foreground-color);
 }
 
 .toggle {
