@@ -335,6 +335,14 @@ a {
     display: block
 }
 
+video#fullscreen_embed {
+    position:relative;
+    margin: auto;
+    width:100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
 .vid-16-9 {
     aspect-ratio: 16 / 9;
     width: 100%;
